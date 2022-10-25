@@ -1,4 +1,4 @@
-INSERT MANDATORY GIF
+<iframe src="https://giphy.com/embed/1nJbEn0tiVocfIfysc" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/typography-kinetic-creative-1nJbEn0tiVocfIfysc">via GIPHY</a></p>
 
 # Project Title
 

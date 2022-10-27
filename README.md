@@ -1,8 +1,10 @@
 
 
-# Project Title
+# WORLD WIDE WEAVE
 
-Text about the project and why it exists. This would also be a great place to link the project on One.com.
+A website explaining the connection between coding and weaving, computers and looms.
+
+url: https://annabrumark.se/elephpant/index.php
 
 # Installation
 

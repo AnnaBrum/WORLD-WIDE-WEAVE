@@ -66,3 +66,9 @@ $readMore = [
      "Weaving and Coding" =>
      "https://nyujournalismprojects.org/pixel/weaving-paved-the-way-for-computer-coders/"
 ];
+
+$images = [
+    "images/Jacquard_loom.jpeg",
+    "images/patterns.png",
+    "images/punchcards.jpeg"
+];

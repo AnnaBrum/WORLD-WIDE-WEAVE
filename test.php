@@ -30,14 +30,13 @@ $patterns = [
     ],
 
     $satin = [
-        [0, 1, 0, 0, 0, 0, 1, 0],
-        [0, 0, 0, 0, 1, 0, 0, 0],
-        [0, 0, 1, 0, 0, 0, 0, 1],
-        [1, 0, 0, 0, 0, 1, 0, 0],
-        [0, 0, 0, 1, 0, 0, 0, 0],
-        [0, 1, 0, 0, 0, 0, 1, 0],
-        [0, 0, 0, 0, 1, 0, 0, 0],
-        [0, 0, 1, 0, 0, 0, 0, 1]
+        [0, 1, 0, 0, 0, 0, 1],
+        [0, 0, 0, 0, 1, 0, 0],
+        [0, 0, 1, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 1, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0, 1],
+        [0, 0, 0, 0, 1, 0, 0]
 
     ],
 
@@ -73,10 +72,22 @@ $patterns = [
   background-color: white;
   border: 0.5px solid black;
 }
-</style>
 
-<?php function printSatin(array $satin) { ?>
-    <?php foreach ($satin as $row) { ?>
+.pattern {
+    display: flex;
+    flex-direction:row;
+}
+.pattern-repeat {
+  display: block;
+
+}
+
+
+</style>
+<div class= "pattern">
+<?php function printPattern(array $twill) { ?>
+
+    <?php foreach ($twill as $row) { ?>
         <div class="container">
 
             <?php foreach ($row as $number) { ?>
@@ -93,4 +104,15 @@ $patterns = [
 
         </div>
     <?php }; ?>
+
 <?php }; ?>
+</div>
+
+
+<!-- <div class= "pattern-repeat">
+<?php for ($i=0; $i < 10; $i++) {
+    echo PrintPattern($twill);
+} ?>
+</div> -->
+
+

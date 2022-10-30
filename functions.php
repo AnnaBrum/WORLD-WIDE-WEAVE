@@ -3,11 +3,18 @@ declare(strict_types=1); ?>
 
 <?php
 
-function randomAdvice(array $advice) {
-    $random_advice = array_rand($advice, 1);
-    echo $advice[$random_advice];
+    function randomImage(array $images) {
+        $randomImage = array_rand($images,1);
+        return $images[$randomImage];
+    }
 
-};?>
+// function randomImage(array $images) {
+//     $random_image = array_rand($images, 1);
+//     echo $images[$random_image];
+
+// };
+
+?>
 
 <!-- PRINT-PATTERN-FUNCTIONS
     Funktionerna nedan loopar de olika arrayerna med vävmönster som i sin tur loopar rader med blåaa och vita rutor som symboliserar om varpen ska gå upp eller ned. -->
@@ -95,3 +102,4 @@ function randomAdvice(array $advice) {
         </div>
     <?php }; ?>
 <?php }; ?>
+

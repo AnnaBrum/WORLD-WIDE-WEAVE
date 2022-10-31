@@ -6,7 +6,9 @@ require __DIR__ . '/arrays.php';
 ?>
 
 <h2> Links </h2>
-<?php foreach ($articles as $article_title => $link);
-            echo $link;?>
+
+<!-- Funktion som loopar artiklar som länkas. -->
+<?= listLinks($articles)?>
+
 
 <?php require __DIR__ . '/footer.php'; ?>

@@ -115,4 +115,30 @@ $patterns = [
 } ?>
 </div> -->
 
+<?php
+
+
+
+$bg_colors = [
+    "yellow" => "#ffffca",
+    "blue" => "#cae9ff",
+    "pink" => "#fbd5d5",
+    "green" => "#d5fbd8"
+
+];
+
+/* ASSOCIATIV ARRAY ARRAY MED LÄNKAR TILL BILDER.
+    $images = "image url" => "alt-text" */
+
+$images = [
+    "card-maker" => "./images/card-maker.jpeg",
+    "ibm punchcards" => "./images/ibm_punchcards_600.jpg",
+    "Jacquard Loom" => "./images/jacquard-loom.png",
+    "Jacquard Loom punchcards" => "./images/punchcards.jpg"
+];
+?>
+<?php   function randomImage(array $images) {
+    $random_image = array_rand($images);
+    }
+?>
 

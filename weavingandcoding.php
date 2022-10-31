@@ -17,12 +17,11 @@ require __DIR__ . '/header.php';
         <p>
         The Jacquard Loom is important to computer history because it is the first machine to use interchangeable punch cards to instruct a machine to perform automated tasks. Having a machine that could perform various tasks is similar to today's computer programs that can be programmed to perform different tasks. The Jacquard Loom was also an inspiration to Charles Babbage and Ada Lovelace planning to use perforated cards in his analytical engine. Herman Hollerith also used the idea of punch cards to not only store information, but to input information into a computing device, helping to create the company IBM.
         </p>
-
-        <?php
-
-        ?>
-
     </article>
+
+    <section class="image-section">
+        <?= listImages($images); ?>
+    </section>
 
     <?php require __DIR__ . '/footer.php'; ?>
 

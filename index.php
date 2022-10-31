@@ -1,25 +1,18 @@
 <?php
-
 declare(strict_types=1);
 require __DIR__ . '/header.php';
 require __DIR__ . '/functions.php';
 require __DIR__ . '/arrays.php';
-
 ?>
 
 <main>
-    <h1>WORLD WIDE WEAVE</h1>
 
-    <nav>
-        <ul>
-            <li><a class="another-page" href="./weavingandcoding.php"> Weaving and Coding </a></li>
-            <li><a class="another-page" href="./patterns.php"> Patterns </a></li>
-            <li><a class="another-page" href="./links.php"> Links </a></li>
-        </ul>
-    </nav>
+    <img src="/images/ibm_punchcards_1000.jpg" alt="Hands holding IBM-punchcards." width="1000" height="555"/>
 
-
-<img src="<?= randomImage($images)?>"></img>
+    <p class="introduction">
+    A website explaining the connection between coding and weaving, computers and looms.
+    </p>
 
 </main>
+
 <?php require __DIR__ . '/footer.php'; ?>

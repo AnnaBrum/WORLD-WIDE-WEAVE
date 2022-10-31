@@ -1,25 +1,31 @@
 <?php
-declare(strict_types=1); ?>
+declare(strict_types=1);
+require __DIR__ . '/arrays.php'; ?>
 
-<?php
+<!-- Funktion som visar random bild från arrayen $images på sidan "Weaving and Coding" -->
+<?php   function listImages(array $images) {
+            foreach ($images as $alt => $url) {
+?>              <img src="<?=$url?>" alt= "<?=$alt;?>">
+<?php               echo "<br>";
+            }
+        };
+?>
 
-    function randomImage(array $images) {
-        $randomImage = array_rand($images,1);
-        return $images[$randomImage];
-    }
 
-// function randomImage(array $images) {
-//     $random_image = array_rand($images, 1);
-//     echo $images[$random_image];
+<!-- Funktion som printar ut lista på länkar. -->
 
-// };
-
+<?php   function listLinks(array $articles) {
+            foreach ($articles as $article => $link) {
+?>              <a href="<?=$link?>"> <?="$article";?></a>
+<?php               echo "<br>";
+            }
+        };
 ?>
 
 <!-- PRINT-PATTERN-FUNCTIONS
-    Funktionerna nedan loopar de olika arrayerna med vävmönster som i sin tur loopar rader med blåaa och vita rutor som symboliserar om varpen ska gå upp eller ned. -->
+Funktionerna nedan loopar de olika arrayerna med vävmönster som i sin tur loopar rader med blåaa och vita rutor som symboliserar om varpen ska gå upp eller ned. -->
 
-    <!-- TWOSHAFT -->
+<!-- TWOSHAFT -->
 <?php function printTwoshaft(array $twoshaft) { ?>
     <?php foreach ($twoshaft as $row) { ?>
         <div class="container">
@@ -27,7 +33,7 @@ declare(strict_types=1); ?>
             <?php foreach ($row as $number) { ?>
                 <?php if ($number === 1) { ?>
 
-                    <div class="black"></div>
+                    <div class="blue"></div>
 
                 <?php } else { ?>
 
@@ -48,7 +54,7 @@ declare(strict_types=1); ?>
             <?php foreach ($row as $number) { ?>
                 <?php if ($number === 1) { ?>
 
-                    <div class="black"></div>
+                    <div class="blue"></div>
 
                 <?php } else { ?>
 
@@ -69,7 +75,7 @@ declare(strict_types=1); ?>
             <?php foreach ($row as $number) { ?>
                 <?php if ($number === 1) { ?>
 
-                    <div class="black"></div>
+                    <div class="blue"></div>
 
                 <?php } else { ?>
 
@@ -90,7 +96,7 @@ declare(strict_types=1); ?>
             <?php foreach ($row as $number) { ?>
                 <?php if ($number === 1) { ?>
 
-                    <div class="black"></div>
+                    <div class="blue"></div>
 
                 <?php } else { ?>
 

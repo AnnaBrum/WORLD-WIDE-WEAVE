@@ -2,13 +2,16 @@
 
 # WORLD WIDE WEAVE
 
+![punchcard-gif](https://media1.giphy.com/media/l0HlMDr5SOKGpNu5a/giphy.gif?cid=ecf05e4744437i102pq70gm5f7e3sdtaoj0iwzqj1xhswha8&rid=giphy.gif&ct=g)
+
 A website explaining the connection between coding and weaving, computers and looms.
 
 url: https://annabrumark.se/elephpant/index.php
 
 # Installation
 
-Add the installation instructions.
+1. Download repository
+2. Type PHP -S localhost:8000 in Terminal.
 
 # Code Review
 
@@ -24,5 +27,5 @@ Code review written by [Jane Doh](https://github.com/username).
 
 Tested by the following people:
 
-1. Jane Doe
+1. Alfred Unenge
 2. John Doe

@@ -19,6 +19,7 @@ require __DIR__ . '/header.php';
         </p>
     </article>
 
+    <!-- Funktion som loopar bilder från arrayen $images (ligger i filen "arrays.php") -->
     <section class="image-section">
         <?= listImages($images); ?>
     </section>

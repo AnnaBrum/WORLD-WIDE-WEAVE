@@ -72,6 +72,9 @@ $articles = [
      "https://www.scienceandindustrymuseum.org.uk/objects-and-stories/jacquard-loom"
 ];
 
+    /* ASSOCIATIV ARRAY MED BILDER.
+     $articles = "$article" => "$link" */
+
 $images = [
     "card-maker" => "./images/card-maker.jpeg",
     "Jacquard Loom" => "./images/jacquard-loom.png",

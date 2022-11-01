@@ -2,7 +2,7 @@
 declare(strict_types=1);
 require __DIR__ . '/arrays.php'; ?>
 
-<!-- Funktion som printar bilder från arrayen $images på sidan "Weaving and Coding" -->
+<!-- Funktion som printar bilder från arrayen $images på sidan "Weaving and Coding". -->
 
 <?php   function listImages(array $images) {
             foreach ($images as $alt => $url) {
@@ -11,7 +11,6 @@ require __DIR__ . '/arrays.php'; ?>
             }
         };
 ?>
-
 
 <!-- Funktion som printar ut lista på länkar från arrayen $articles på sidan "Links". -->
 

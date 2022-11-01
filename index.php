@@ -7,7 +7,7 @@ require __DIR__ . '/arrays.php';
 ?>
 
 <main>
-
+    
     <img src="./images/ibm_punchcards_1000.jpg" alt="Hands holding IBM-punchcards." width="1000" height="555" />
 
     <p class="introduction">

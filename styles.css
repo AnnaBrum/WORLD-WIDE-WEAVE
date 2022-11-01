@@ -94,7 +94,6 @@ Om värdet i arrayen är 1 blir rutan blå, om den är 0 blir rutan vit. */
   }
 
   nav {
-    
     text-align: right;
     justify-content: space-between;
   }

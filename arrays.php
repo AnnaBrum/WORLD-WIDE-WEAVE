@@ -68,7 +68,7 @@ $articles = [
      "About Ada Lovelace" =>
      "https://kodboken.se/start/for-pedagoger-och-vuxna/mot-en-kodare/ada-lovelace",
 
-     "Programming Patterns: The story of the Jaquard Loom" =>
+     "Programming Patterns: The story of the Jacquard Loom" =>
      "https://www.scienceandindustrymuseum.org.uk/objects-and-stories/jacquard-loom"
 ];
 

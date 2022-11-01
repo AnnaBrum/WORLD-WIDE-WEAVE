@@ -2,7 +2,8 @@
 declare(strict_types=1);
 require __DIR__ . '/arrays.php'; ?>
 
-<!-- Funktion som visar random bild från arrayen $images på sidan "Weaving and Coding" -->
+<!-- Funktion som printar bilder från arrayen $images på sidan "Weaving and Coding" -->
+
 <?php   function listImages(array $images) {
             foreach ($images as $alt => $url) {
 ?>              <img src="<?=$url?>" alt= "<?=$alt;?>">
@@ -12,11 +13,11 @@ require __DIR__ . '/arrays.php'; ?>
 ?>
 
 
-<!-- Funktion som printar ut lista på länkar. -->
+<!-- Funktion som printar ut lista på länkar från arrayen $articles på sidan "Links". -->
 
 <?php   function listLinks(array $articles) {
             foreach ($articles as $article => $link) {
-?>              <a href="<?=$link?>"> <?="$article";?></a>
+?>              <a href="<?=$link?>"target="_blank">  <?="$article";?></a>
 <?php               echo "<br>";
             }
         };

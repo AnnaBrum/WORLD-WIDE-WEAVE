@@ -7,7 +7,7 @@ require __DIR__ . '/arrays.php';
 
 <h2> Links </h2>
 
-<!-- Funktion som loopar artiklar som länkas. -->
+<!-- Funktion som loopar artiklar (ligger i filen "arrays.php) som länkas. -->
 <?= listLinks($articles)?>
 
 

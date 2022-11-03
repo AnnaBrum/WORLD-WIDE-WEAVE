@@ -6,10 +6,10 @@ require __DIR__ . '/arrays.php'; ?>
 
 <?php   function listImages(array $images) {
             foreach ($images as $alt => $url) {
-?>              <img src="<?=$url?>" alt= "<?=$alt;?>">
-<?php               echo "<br>";
-            }
-        };
+?>              <img src="<?=$url;?>" alt= "<?=$alt;?>">
+<?php              echo "<br>";
+            };
+        }
 ?>
 
 <!-- Funktion som printar ut lista på länkar från arrayen $articles på sidan "Links". -->
@@ -18,8 +18,8 @@ require __DIR__ . '/arrays.php'; ?>
             foreach ($articles as $article => $link) {
 ?>              <a href="<?=$link?>"target="_blank">  <?="$article";?></a>
 <?php               echo "<br>";
-            }
-        };
+            };
+        }
 ?>
 
 <!-- PRINT-PATTERN-FUNCTIONS
@@ -40,11 +40,11 @@ Funktionerna nedan loopar de olika arrayerna med vävmönster som i sin tur loop
                     <div class="white"></div>
 
                 <?php } ?>
-            <?php } ?>
+            <?php }; ?>
 
         </div>
     <?php }; ?>
-<?php }; ?>
+<?php } ?>
 
     <!-- TWILL -->
 <?php function printTwill(array $twill) { ?>
@@ -61,11 +61,11 @@ Funktionerna nedan loopar de olika arrayerna med vävmönster som i sin tur loop
                     <div class="white"></div>
 
                 <?php } ?>
-            <?php } ?>
+            <?php }; ?>
 
         </div>
     <?php }; ?>
-<?php }; ?>
+<?php } ?>
 
     <!-- SATIN -->
 <?php function printSatin(array $satin) { ?>
@@ -82,11 +82,11 @@ Funktionerna nedan loopar de olika arrayerna med vävmönster som i sin tur loop
                     <div class="white"></div>
 
                 <?php } ?>
-            <?php } ?>
+            <?php }; ?>
 
         </div>
     <?php }; ?>
-<?php }; ?>
+<?php } ?>
 
     <!-- BASKET -->
 <?php function printBasket(array $basket) { ?>
@@ -103,9 +103,9 @@ Funktionerna nedan loopar de olika arrayerna med vävmönster som i sin tur loop
                     <div class="white"></div>
 
                 <?php } ?>
-            <?php } ?>
+            <?php }; ?>
 
         </div>
     <?php }; ?>
-<?php }; ?>
+<?php } ?>
 

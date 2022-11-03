@@ -1,5 +1,5 @@
 * {
-  border-radius: border-box; /* Inkluderar marginaler etc inuti elementet.*/
+  box-sizing: border-box; /* Inkluderar marginaler etc inuti elementet.*/
 }
 
 body {
@@ -12,13 +12,12 @@ body {
   padding: 40px;
 }
 
-
 h1 {
   font-size: 60px;
   display: flex;
   flex-direction: column; /* Gör radbrytning efter varje ord */
   margin-bottom: 10px;
-  line-height: 1,5;
+  line-height: 1.5;
 }
 
 nav {
@@ -28,6 +27,16 @@ nav {
   font-size: 12px;
   margin-bottom: 10px;
   line-height: 1.6;
+}
+
+button {
+  all: unset;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 0.5px solid black;
+  padding: 10px;
+  text-align: center;
+
 }
 
 .introduction {

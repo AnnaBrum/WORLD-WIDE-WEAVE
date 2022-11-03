@@ -137,8 +137,42 @@ $images = [
     "Jacquard Loom punchcards" => "./images/punchcards.jpg"
 ];
 ?>
-<?php   function randomImage(array $images) {
-    $random_image = array_rand($images);
-    }
+
+
+<!-- /* --------------- */ -->
+
+<?php   function listImages(array $images) {
+            foreach ($images as $alt => $url) {
+?>              <img src="<?=$url;?>" alt= "<?=$alt;?>">
+<?php              echo "<br>";
+            }
+        };
 ?>
 
+<!-- /* --------------- */ -->
+
+<form action="/patterns.php">
+
+    <h4> Which was your favourite pattern? </h4>
+
+        <input type="radio" id="two-shaft" name="fav_pattern" value="two-shaft">
+        <label for="two-shaft">Two-shaft</label><br>
+
+        <input type="radio" id="twill" name="fav_pattern" value="twill">
+        <label for="twill">Twill</label><br>
+
+        <input type="radio" id="satin" name="fav_pattern" value="satin">
+        <label for="satin">Satin</label><br>
+
+        <input type="radio" id="basket" name="fav_pattern" value="basket">
+        <label for="basket">Basket</label>
+</form>
+
+<?php   function quiz() {
+    if ($_POST["fav_pattern"] === "") {
+        return true;
+    } else {
+        return false;
+    }
+}
+?>

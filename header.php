@@ -11,18 +11,17 @@
 
 <header>
         <h1>
-            <span> World </span>
-            <span> Wide </span>
-            <span> Weave </span>
+            <span>World</span>
+            <span>Wide</span>
+            <span>Weave</span>
         </h1>
 
         <nav>
             <a href="index.php">Home</a>
-            <a href="./weavingandcoding.php"> Weaving and Coding </a>
-            <a href="./patterns.php"> Patterns </a>
-            <a href="./links.php"> Links </a>
+            <a href="./weavingandcoding.php">Weaving and Coding</a>
+            <a href="./patterns.php">Patterns</a>
+            <a href="./links.php">Links</a>
         </nav>
 
 </header>
 
-<body>

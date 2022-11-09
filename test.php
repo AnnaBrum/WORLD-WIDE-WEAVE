@@ -81,17 +81,20 @@ $patterns = [
   display: block;
 
 }
-
-
 </style>
+
 <div class= "pattern">
-<?php function printPattern(array $twill) { ?>
+<?php function printPattern() {
 
-    <?php foreach ($twill as $row) { ?>
-        <div class="container">
+    $pattern = func_get_arg();
 
-            <?php foreach ($row as $number) { ?>
-                <?php if ($number === 1) { ?>
+        foreach ($pattern as $row) {?>
+
+            <div class="container">
+
+                <?php foreach ($row as $number) {
+
+                    if ($number === 1) { ?>
 
                     <div class="black"></div>
 
@@ -103,11 +106,13 @@ $patterns = [
             <?php } ?>
 
         </div>
-    <?php }; ?>
+    <?php };
 
-<?php }; ?>
+}
+?>
 </div>
 
+<?= printPattern($pattern)?>
 
 <!-- <div class= "pattern-repeat">
 <?php for ($i=0; $i < 10; $i++) {
@@ -151,28 +156,59 @@ $images = [
 
 <!-- /* --------------- */ -->
 
-<form action="/patterns.php">
+<form action="/test.php" method= "GET">
 
     <h4> Which was your favourite pattern? </h4>
 
-        <input type="radio" id="two-shaft" name="fav_pattern" value="two-shaft">
+        <input type="radio" id="two-shaft" name="fav-pattern" value="two-shaft">
         <label for="two-shaft">Two-shaft</label><br>
 
-        <input type="radio" id="twill" name="fav_pattern" value="twill">
+        <input type="radio" id="twill" name="fav-pattern" value="twill">
         <label for="twill">Twill</label><br>
 
-        <input type="radio" id="satin" name="fav_pattern" value="satin">
+        <input type="radio" id="satin" name="fav-pattern" value="satin">
         <label for="satin">Satin</label><br>
 
-        <input type="radio" id="basket" name="fav_pattern" value="basket">
-        <label for="basket">Basket</label>
+        <input type="radio" id="basket" name="fav-pattern" value="basket">
+        <label for="basket">Basket</label><br>
+
+        <input type="submit" value="Submit Answer">
+
 </form>
 
-<?php   function quiz() {
-    if ($_POST["fav_pattern"] === "") {
-        return true;
-    } else {
-        return false;
+<?php
+$favPattern = $_GET["fav-pattern"];
+
+// switch ($favPattern) {
+//     case "two-shaft":
+//         echo "That's a strong and durable choice!";
+//         break;
+//     case "twill":
+//         echo "I guess you're into jeans, right?!";
+//         break;
+//     case "satin":
+//         echo "You like the fancy stuff, don't you??";
+//         break;
+//     case "basket":
+//         echo "You like simplicity!";
+//         break;
+//     default:
+//         echo "It's not an easy choice!";
+//         break;
+// }
+
+
+    if (isset($_GET['name'])) {
+        if ($_GET["fav-pattern"] === "two-shaft"){
+        echo "That's a strong and durable choice!";
+        } if ($_GET["fav-pattern"] === "twill"){
+        echo "I guess you're into jeans, right?!";
+        } if ($_GET["fav-pattern"] === "satin"){
+        echo "You like the fancy stuff, don't you??";
+        } if ($_GET["fav-pattern"] === "basket") {
+        echo "You like simplicity!";
+        };
     }
-}
-?>
+
+
+

@@ -5,6 +5,7 @@
 ![punchcard-gif](https://media1.giphy.com/media/l0HlMDr5SOKGpNu5a/giphy.gif?cid=ecf05e4744437i102pq70gm5f7e3sdtaoj0iwzqj1xhswha8&rid=giphy.gif&ct=g)
 
 A website explaining the connection between coding and weaving, computers and looms.
+With patterns rendered in code.
 
 url: https://annabrumark.se/elephpant/index.php
 
